@@ -25,12 +25,13 @@ if(choice === 1){
              console.log('The task has been added!');
             }
   //viewing the tasks
-    else if (choice === 2) {
-        console.log('Your tasks:');
-        tasks.forEach((task,index) => {
-                const status = task.completed ? '(done)' : '(not done)';
-                console.log(`${index + 1}` + task.task + ' ' + status);
-            });
+    else if(choice === 2){
+  console.log('---Your tasks---');
+   tasks.forEach((task,index) => {
+   console.log(${index + 1} ${task.task});
+})
+console.log(tasks);
+
         }
     else if(choice === 3){
 
