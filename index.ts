@@ -2,6 +2,11 @@ import PromptSync = require('prompt-sync')
 
 const prompt = PromptSync()
 
+interface Task {
+    task: string;
+    completed: boolean;
+}
+
 console.log('Welcome To Task Manager!!!');
 
 let check = true;
