@@ -6,6 +6,8 @@ console.log('Welcome To Task Manager!!!');
 
 let check = true;
 
+let tasks: Task[] = [];
+
 while(check){
 
     console.log(`
