@@ -4,6 +4,12 @@ const prompt = PromptSync()
 
 console.log('Welcome To Task Manager!!!');
 
+interface Task { 
+    task : string;
+    completed : boolean;
+} 
+
+let tasks: Task[] = [];
 let check = true;
 
 while(check){
