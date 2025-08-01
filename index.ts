@@ -30,12 +30,14 @@ What would you like to do?
         const choice1 = prompt('Enter the task description: ')
         tasks.push({task: choice1, completed: false});
              console.log('The task has been added!');
-    }
+    
     }else if(choice === 2){
         console.log('---Your tasks---');
         tasks.forEach((task,index) => {
-         console.log(${index + 1} ${task.task});
+        console.log(`${index + 1} ${task.task}`);
+
 })
+    
 console.log(tasks);
 
     }else if(choice === 3){
@@ -47,6 +49,5 @@ console.log(tasks);
     }else{
         console.log('You have entered an invalid choice');
     }
+
 }
-
-
