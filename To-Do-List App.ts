@@ -32,14 +32,14 @@ if(choice === 1){
             }
   //viewing the tasks
     else if (choice === 2) {
-        console.log('Your tasks:');
+        console.log('---Your tasks---');
         tasks.forEach((task,index) => {
             const status = task.isCompleted ? '(done)' : '(not done)';
             console.log(`${index + 1}.` + task.task + ' ' + status);
             });
-        }
+
     // Mark as completed
-    else if(choice === 3){
+        }else if(choice === 3){
         const index = Number(prompt("Enter task number to mark as completed: ")) -1;
         if(tasks[index]){
             tasks[index].isCompleted = true;
